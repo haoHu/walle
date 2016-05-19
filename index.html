@@ -2,12 +2,55 @@
 <html>
     <head>
         <title>Walle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <!-- load bootstrap -->
+        <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+        <script>window.$ = window.jQuery = require('jquery/dist/jquery.js');</script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+        <!-- 1. Load libraries -->
+        <!-- Polyfill(s) for older browsers -->
+        <script src="node_modules/es6-shim/es6-shim.min.js" charset="utf-8"></script>
+        <script src="node_modules/zone.js/dist/zone.js" charset="utf-8"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js" charset="utf-8"></script>
+        <!-- <script src="node_modules/systemjs/dist/system.src.js" charset="utf-8"></script> -->
+        <!-- <script src="node_modules/@angular/common/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/compiler/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/core/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/http/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/platform-browser/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/platform-browser-dynamic/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/router/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/router-deprecated/index.js" charset="utf-8"></script>
+        <script src="node_modules/@angular/upgrade/index.js" charset="utf-8"></script> -->
+
+
+
+
+
+        <!-- 2. Configure SystemJS -->
+        <!-- <script src="systemjs.config.js" charset="utf-8"></script> -->
+        <!-- <script>
+          System.import('src').catch(function (err) {console.error(err)});
+        </script> -->
+        <base href="/" >
     </head>
     <body>
         <div id="face"></div>
+        <walle-app style="position:absolute;top:0;bottom:0;"></walle-app>
         <script>
             require('behaviorify/register-es6');
+
+            require('@angular/common');
+            require('@angular/compiler');
+            require('@angular/core');
+            require('@angular/http');
+            require('@angular/platform-browser');
+            require('@angular/platform-browser-dynamic');
+            require('@angular/router');
+            require('@angular/router-deprecated');
+            require('@angular/upgrade');
             require('./src');
         </script>
     </body>

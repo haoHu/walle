@@ -1,0 +1,25 @@
+{
+  "compileOnSave" : false,
+  "compilerOptions" : {
+    "module" : "commonjs",
+    "target" : "es5",
+    "moduleResolution" : "node",
+    "sourceMap" : true,
+    "emitDecoratorMetadata" : true,
+    "experimentalDecorators" : true,
+    "removeComments" : false,
+    "noImplicitAny" : false
+  },
+  "exclude" : [
+    "node_modules",
+    "node_modules/**",
+    "animations",
+    "audio",
+    "behaviors",
+    "rules",
+    "src",
+    "styles",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+}

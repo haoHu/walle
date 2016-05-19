@@ -1,0 +1,67 @@
+{
+    "1": {
+        "id": 1,
+        "class": "Sequence",
+        "name": "",
+        "options": {},
+        "children": [
+            "25b19f14-0d96-4a40-8f48-e2db0ddc1d39",
+            "ee9a7b9e-d79f-4481-aea4-f67f4b243590"
+        ]
+    },
+    "meta": {
+        "version": 1
+    },
+    "25b19f14-0d96-4a40-8f48-e2db0ddc1d39": {
+        "id": "25b19f14-0d96-4a40-8f48-e2db0ddc1d39",
+        "class": "ExecuteScript",
+        "name": "",
+        "options": {
+            "exec": [
+                "() => {",
+                "  var express = require('express');",
+                "  var path = require('path');",
+                "  var app = express();",
+                "  app.set('port', 3000);",
+                "  app.set('views', path.join(__dirname, 'src'));",
+                "  app.use(express.static(path.join(__dirname, 'src')));",
+                "  app.get('/index', function (req, res) {",
+                "    res.send('hello world!');",
+                "  });",
+                "  var server = app.listen(app.get('port'));",
+                "  console.log(server.address());",
+                "  ",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    },
+    "ee9a7b9e-d79f-4481-aea4-f67f4b243590": {
+        "id": "ee9a7b9e-d79f-4481-aea4-f67f4b243590",
+        "class": "ExecuteScript",
+        "name": "",
+        "options": {
+            "exec": [
+                "() => {",
+                "  console.log('open window');",
+                "  window.open('http://127.0.0.1:3000/index');",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1,
+        "decorators": [
+            "af3690f1-e03a-43fd-a7bb-e4b55d08cd33"
+        ]
+    },
+    "af3690f1-e03a-43fd-a7bb-e4b55d08cd33": {
+        "id": "af3690f1-e03a-43fd-a7bb-e4b55d08cd33",
+        "class": "TimeoutSucceed",
+        "name": "",
+        "options": {
+            "timeout": 5000
+        },
+        "asset-pack": "core"
+    }
+}
