@@ -8,31 +8,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_deprecated_1 = require('@angular/router-deprecated');
+const core_1 = require('@angular/core');
+const router_deprecated_1 = require('@angular/router-deprecated');
 // let rootPath = window.Walle.RootPath;
 // let comPath = rootPath + '/src/weather';
 // console.info(__dirname);
-var comPath = __dirname;
-var WeatherComponent = (function () {
-    function WeatherComponent(router) {
+let comPath = __dirname;
+let WeatherComponent = class WeatherComponent {
+    constructor(router) {
         this.router = router;
     }
-    WeatherComponent.prototype.ngOnInit = function () {
-    };
-    WeatherComponent = __decorate([
-        core_1.Component({
-            selector: 'walle-weather',
-            // moduleId: module.id,
-            // templateUrl : 'file:///Users/huhao/github/walle/src/weather/weather.component.html',
-            // styleUrls : ['file:///Users/huhao/github/walle/src/weather/weather.component.css']
-            moduleId: comPath + '/weather.component',
-            templateUrl: './weather.component.html',
-            styleUrls: ['./weather.component.css']
-        }), 
-        __metadata('design:paramtypes', [router_deprecated_1.Router])
-    ], WeatherComponent);
-    return WeatherComponent;
-}());
+    ngOnInit() {
+    }
+};
+WeatherComponent = __decorate([
+    core_1.Component({
+        selector: 'walle-weather',
+        // moduleId: module.id,
+        // templateUrl : 'file:///Users/huhao/github/walle/src/weather/weather.component.html',
+        // styleUrls : ['file:///Users/huhao/github/walle/src/weather/weather.component.css']
+        moduleId: comPath + '/weather.component',
+        templateUrl: './weather.component.html',
+        styleUrls: ['./weather.component.css']
+    }), 
+    __metadata('design:paramtypes', [router_deprecated_1.Router])
+], WeatherComponent);
 exports.WeatherComponent = WeatherComponent;
 //# sourceMappingURL=weather.component.js.map

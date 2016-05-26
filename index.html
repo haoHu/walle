@@ -3,8 +3,13 @@
     <head>
         <title>Walle</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles/main.css" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/walle-material-design/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css" charset="utf-8">
+        <link rel="stylesheet" href="node_modules/walle-material-design/bower_components/bootstrap-material-design/dist/css/ripples.css" charset="utf-8">
+        <link rel="stylesheet" href="node_modules/walle-material-design/dist/css/walle.css" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+
         <!-- load bootstrap -->
         <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
         <script>window.$ = window.jQuery = require('jquery/dist/jquery.js');</script>
@@ -25,6 +30,11 @@
         <script src="node_modules/@angular/router-deprecated/index.js" charset="utf-8"></script>
         <script src="node_modules/@angular/upgrade/index.js" charset="utf-8"></script> -->
 
+        <script src="node_modules/walle-material-design/bower_components/bootstrap-material-design/dist/js/material.js" charset="utf-8"></script>
+        <script src="node_modules/walle-material-design/bower_components/bootstrap-material-design/dist/js/ripples.js" charset="utf-8"></script>
+        <script src="node_modules/walle-material-design/bower_components/iscroll/build/iscroll.js" charset="utf-8"></script>
+        <script>window.IScroll = require('walle-material-design/bower_components/iscroll/build/iscroll.js');console.log(IScroll);</script>
+
 
 
 
@@ -38,7 +48,7 @@
     </head>
     <body>
         <div id="face"></div>
-        <walle-app style="position:absolute;top:0;bottom:0;"></walle-app>
+        <walle-app></walle-app>
         <script>
             require('behaviorify/register-es6');
 
@@ -52,6 +62,11 @@
             require('@angular/router-deprecated');
             require('@angular/upgrade');
             require('./src');
+            $(function() {
+
+
+              $.material.init();
+            });
         </script>
     </body>
 </html>

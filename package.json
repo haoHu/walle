@@ -32,7 +32,8 @@
 
     "angular2-in-memory-web-api": "0.0.7",
     "bootstrap": "^3.3.6",
-    "jquery" : "latest"
+    "jquery" : "latest",
+    "walle-material-design" : "latest"
   },
   "devDependencies" : {
     "concurrently" : "^2.0.0",

@@ -1,6 +1,69 @@
-<h1>{{title}}</h1>
-<nav>
-  <a class="btn btn-link" [routerLink]="['Dashboard']">Dashboard</a>
-  <a class="btn btn-link" [routerLink]="['Weather']">Weather</a>
-</nav>
-<router-outlet></router-outlet>
+<div class="wrapper" id="jibo_ui">
+  <h1>{{title}}</h1>
+  <!-- <nav>
+    <a class="btn btn-link" [routerLink]="['Dashboard']">Dashboard</a>
+    <a class="btn btn-link" [routerLink]="['Weather']">Weather</a>
+  </nav> -->
+  <div class="walle-menu skill-menu">
+			<div class="menu-head">
+				<h2 class="menu-title">Skill Menu</h2>
+			</div>
+			<div class="menu-body" id="walle_menu_1">
+        <div class="menu-list">
+          <div class="menu-item">
+            <a [routerLink]="['Dashboard']" class="btn walle-btn walle-btn-lg">
+              <span class="btn-inner">
+              <!-- <img src="img/weather.jpeg" alt="" class="btn-icon"> -->
+              </span>
+            </a>
+            <label class="label" for="">Dashboard</label>
+          </div>
+          <div class="menu-item">
+            <a [routerLink]="['Weather']" class="btn walle-btn walle-btn-lg">
+              <span class="btn-inner">
+                <!-- <img src="img/weather.jpeg" alt="" class="btn-icon"> -->
+              </span>
+            </a>
+            <label class="label" for="">Weather</label>
+          </div>
+          <div class="menu-item">
+            <a [routerLink]="['Dashboard']" class="btn walle-btn walle-btn-lg">
+              <span class="btn-inner">
+              <!-- <img src="img/weather.jpeg" alt="" class="btn-icon"> -->
+              </span>
+            </a>
+            <label class="label" for="">Dashboard</label>
+          </div>
+          <div class="menu-item">
+            <a [routerLink]="['Weather']" class="btn walle-btn walle-btn-lg">
+              <span class="btn-inner">
+                <!-- <img src="img/weather.jpeg" alt="" class="btn-icon"> -->
+              </span>
+            </a>
+            <label class="label" for="">Weather</label>
+          </div>
+          <div class="menu-item">
+            <a [routerLink]="['Dashboard']" class="btn walle-btn walle-btn-lg">
+              <span class="btn-inner">
+              <!-- <img src="img/weather.jpeg" alt="" class="btn-icon"> -->
+              </span>
+            </a>
+            <label class="label" for="">Dashboard</label>
+          </div>
+          <div class="menu-item">
+            <a [routerLink]="['Weather']" class="btn walle-btn walle-btn-lg">
+              <span class="btn-inner">
+                <!-- <img src="img/weather.jpeg" alt="" class="btn-icon"> -->
+              </span>
+            </a>
+            <label class="label" for="">Weather</label>
+          </div>
+
+        </div>
+			</div>
+	</div>
+  <script>
+
+  </script>
+  <router-outlet></router-outlet>
+</div>

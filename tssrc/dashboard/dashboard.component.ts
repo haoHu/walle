@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router-deprecated';
-var path = require('path');
+
+import path = require('path');
+// import {path} from 'path';
 console.log(path);
 // let rootPath = window.Walle.RootPath;
 // let comPath = rootPath + '/src/dashboard';

@@ -2,7 +2,7 @@
   "compileOnSave" : false,
   "compilerOptions" : {
     "module" : "commonjs",
-    "target" : "es5",
+    "target" : "es6",
     "moduleResolution" : "node",
     "sourceMap" : true,
     "emitDecoratorMetadata" : true,
@@ -12,7 +12,6 @@
   },
   "exclude" : [
     "node_modules",
-    "node_modules/**",
     "animations",
     "audio",
     "behaviors",

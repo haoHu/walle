@@ -2,10 +2,14 @@
 
 let jibo = require('jibo');
 let Status = jibo.bt.Status;
-window.Walle = {};
-let root = window.location.href;
-root = root.slice(0, root.lastIndexOf('/'));
-window.Walle.RootPath = root;
+let jiboFace = $('#face');
+jiboFace.on('click', function(e) {
+  let jiboUI = $('#jibo_ui');
+  jibo.face.visible = false;
+  jiboFace.hide(400);
+
+  jiboUI.show(400).addClass('fade in');
+});
 require('./main');
 
 
